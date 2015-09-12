@@ -13,6 +13,7 @@
 #include <iostream> // cout, endl
 #include <sstream>  // istringtstream, ostringstream
 #include <string>   // string
+#include <cstring>  // std::strcmp
 #include <utility>  // pair
 
 #include "gtest/gtest.h"

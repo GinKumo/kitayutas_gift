@@ -2,7 +2,7 @@
 
 #include "KitayutasGift.h"
 
-#include <cstring>
+#include <cstring> // std::strcmp, std::strcpy
 
 using namespace std;
 
