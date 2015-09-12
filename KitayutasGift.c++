@@ -2,6 +2,8 @@
 
 #include "KitayutasGift.h"
 
+#include <cstring>
+
 using namespace std;
 
 void SolveKitayutasGift(char *res, const char *str)
