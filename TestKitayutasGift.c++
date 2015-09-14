@@ -48,7 +48,7 @@ TEST(KitayutasGiftFixture, solve_2) {
 TEST(KitayutasGiftFixture, solve_3) {
     char  ostr[12];
     SolveKitayutasGift(ostr, "amor,oma");
-    ASSERT_TRUE(std::strcmp(ostr,"amor,roma") == 0);}
+    ASSERT_TRUE(std::strcmp(ostr,"amo,r,oma") == 0);}
 
 //           -> a
 TEST(KitayutasGiftFixture, solve_4) {
@@ -73,4 +73,46 @@ TEST(KitayutasGiftFixture, solve_7) {
     char  ostr[12];
     SolveKitayutasGift(ostr, "cc");
     ASSERT_TRUE(std::strcmp(ostr,"ccc") == 0);}
+
+//fft -> tfft
+TEST(KitayutasGiftFixture, solve_8) {
+    char  ostr[12];
+    SolveKitayutasGift(ostr, "fft");
+    ASSERT_TRUE(std::strcmp(ostr,"tfft") == 0);}
+
+//noon -> nooon
+TEST(KitayutasGiftFixture, solve_9) {
+    char  ostr[12];
+    SolveKitayutasGift(ostr, "noon");
+    ASSERT_TRUE(std::strcmp(ostr,"nooon") == 0);}
+
+//bbb -> bbbb
+TEST(KitayutasGiftFixture, solve_10) {
+    char  ostr[12];
+    SolveKitayutasGift(ostr, "bbb");
+    ASSERT_TRUE(std::strcmp(ostr,"bbbb") == 0);}
+
+//abbabab -> NA
+TEST(KitayutasGiftFixture, solve_11) {
+    char  ostr[12];
+    SolveKitayutasGift(ostr, "abbabab");
+    ASSERT_TRUE(std::strcmp(ostr,"NA") == 0);}
+
+//yosupo -> NA
+TEST(KitayutasGiftFixture, solve_12) {
+    char  ostr[12];
+    SolveKitayutasGift(ostr, "yosupo");
+    ASSERT_TRUE(std::strcmp(ostr,"NA") == 0);}
+
+//stat -> stats
+TEST(KitayutasGiftFixture, solve_13) {
+    char  ostr[12];
+    SolveKitayutasGift(ostr, "stat");
+    ASSERT_TRUE(std::strcmp(ostr,"stats") == 0);}
+
+//vnwmvvmonv -> NA
+TEST(KitayutasGiftFixture, solve_14) {
+    char  ostr[12];
+    SolveKitayutasGift(ostr, "vnwmvvmonv");
+    ASSERT_TRUE(std::strcmp(ostr,"NA") == 0);}
 
