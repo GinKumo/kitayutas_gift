@@ -40,7 +40,7 @@ KitayutasGift: KitayutasGift.h KitayutasGift.c++ RunKitayutasGift.c++
 
 KitayutasGift.tmp: KitayutasGift
 	./KitayutasGift < KitayutasGift.in > KitayutasGift.tmp
-	#diff KitayutasGift.tmp KitayutasGift.out
+	diff KitayutasGift.tmp KitayutasGift.out
 
 TestKitayutasGift: KitayutasGift.h KitayutasGift.c++ TestKitayutasGift.c++
 	$(CXX) $(CXXFLAGS) $(GCOVFLAGS) KitayutasGift.c++ TestKitayutasGift.c++ -o TestKitayutasGift $(LDFLAGS)
